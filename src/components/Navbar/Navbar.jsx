@@ -14,13 +14,14 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
         <li className="p__opensans"><a href="#nosotros">Nosotros</a></li>
+        <li className="p__opensans"><a href="#habitaciones">Habitaciones</a></li>
         <li className="p__opensans"><a href="#menu">Menú</a></li>
-        <li className="p__opensans"><a href="#contacto">ContactO</a></li>
+        <li className="p__opensans"><a href="#contacto">Contacto</a></li>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Log In / Registration</a>
+        <a href="#login" className="p__opensans">Registro Habitación</a>
         <div />
-        <a href="/" className="p__opensans">Book Table</a>
+        <a href="/" className="p__opensans">Registrar Mesa</a>
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -29,10 +30,10 @@ const Navbar = () => {
             <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
+              <li><a href="#nosotros" onClick={() => setToggleMenu(false)}>Nosotros</a></li>
               <li><a href="#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li><a href="#awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
-              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <li><a href="#habitaciones" onClick={() => setToggleMenu(false)}>Habitaciones</a></li>
+              <li><a href="#contacto" onClick={() => setToggleMenu(false)}>Contacto</a></li>
             </ul>
           </div>
         )}
@@ -42,3 +43,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
